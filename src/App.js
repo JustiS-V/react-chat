@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Chat from './components/pages/chat';
 import About from './components/pages/about';
 import Profile from './components/pages/profile';
-import { Navbar } from 'components/navigation/navBar';
+import Navbar  from 'components/navigation/navBar';
 import Home from 'components/pages/home';
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Chat/>} />
-          <Route path="/contact" element={<Profile />} />
+          <Route path="/chat" element={<Chat/>} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
     );
